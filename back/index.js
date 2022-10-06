@@ -11,6 +11,9 @@ const port = 3000
 
 /* express 미들웨어 설정 */
 
+// 정적파일 제공
+app.use(express.static("front"));
+
 // cors 설정
 // 허가된 애들만 이 api를 사용하게 할꺼야
 // 웹브라우저에서 도메인이 다르면 요청을 하지 못하게 한다
